@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="projects.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Kathdy Pril-Projects</title>
+  </head>
+  <body>
+    <h1>Projects</h1>
+
+    <div class="main-carousel">
+      <div class="cell"><img src="T-Shirt Mockup psd.png" /></div>
+      <div class="cell"><img src="mobile_desktop.png" /></div>
+      <div class="cell"><img src="desktop_homepage.png" /></div>
+      <div class="cell"><img src="logo.png" /></div>
+      <div class="cell"><img src="snapchat_filters.png" /></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+      $(".main-carousel").flickity({
+        cellAlign: "left",
+        wrapAround: true,
+        freeScroll: true,
+        contain: true,
+      });
+    </script>
+  </body>
+</html>

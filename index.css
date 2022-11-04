@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    overflow-x:hidden ;
+}
+
+
+/* Navigation bar */
+header{
+    background-color: #EAB8FF;
+}
+li{
+    list-style: none;
+
+}
+a {
+color: white;
+text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.kathdypril{
+    color:white;
+    font-size: 32px;
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav_link{
+    transition: 0.7s ease;
+}
+.nav_link:hover {
+    color: lightpink
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+/* Editing the spans */ 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* End of navigation bar */
+
+
+
+
+/*Section: Welcome page */
+
+#intro{
+    padding-bottom: 100px;
+}
+.welcome{
+    padding-left: 60px;
+}
+
+.welcome .line1{ /* Welcome to my portfolio */
+    position: relative;
+    width: 1198px;
+    height: 44px;
+    text-shadow: 1px 1px 4px rgba(100,100,100,0.5);
+    color: #EAB8FF;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 500;
+    padding: 72px 0px;
+    margin: 60px 0px;
+}
+.welcome .line2{ /* Here resides my digital life */
+    position: relative;
+    text-shadow: 1px 1px rgba(100,100,100,0.5);
+    color: #ffc7b8;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 12px 0px;
+}
+.welcome .line3{ /* I am a spunky creative... */
+    position: relative;
+    width: 1198px;
+    height: 44px;
+    text-shadow: 1px 1px rgba(100,100,100,0.5);
+    color: #dba0c2;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 12px 0px;
+}
+.welcome .line4{ /* Pardon my pink and purple theme. */
+    position: relative;
+    width: 1198px;
+    height: 44px;
+    text-shadow: 1px 1px rgba(100,100,100,0.5);
+    color: #f5a6a2;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 12px 0px;
+    padding-bottom: 80px;
+}
+#purple{
+    color: #eab8ff;
+}
+.be_different{
+    color: #B24781;
+}
+.welcome .line5{
+    color: #EAB8FF;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+
+/* Section: Projects */
+
+#projects{
+    padding-top: 20px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAB8FF;
+
+}
+.projects_container{
+    width: 100;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftside_image{
+    width: 50%;
+    height: 500px;
+}
+.leftside_image img{
+    border-radius: 10px;
+}
+.rightside_description{
+    width: 30%;
+    min-height: 300px;
+    background-color: white;
+    display: flex;
+    flex-shrink: 1;
+    align-items: center;
+    padding:30px;
+    border-radius:8px;
+    color: #f5a6a2;
+}
+.rightside_description h1{
+    font-size: 2rem;
+    margin-bottom: 26px;
+}
+.rightside_description p{
+    padding-bottom: 10px;
+}
+
+button{
+    color: black;
+    border:none;
+    color: white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background-color: #f5a6a2;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+/* About Me section */
+#about_me{
+    background-color: #EAB8FF;
+    margin: 0;
+    height: 60vh;
+    min-width: 0;
+}
+
+ .about_me_container{
+    display: flex;
+    height: auto;
+    min-width: 0;
+    padding-left: 3rem;
+    justify-content: space-evenly;
+}
+
+.left_side{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.left_side h1{
+text-shadow: 1px 1px rgba(100,100,100,0.5);
+margin: 0;
+font-size: 50px;
+color: white;
+}
+.left_side p{
+    color:white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.right_side_image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+.right_side_image img{
+    height: 80%;
+    width: 50%;
+    border-radius: 20px; 
+} 
+
+
+
+
+
+
+/* Contact Me Section */
+
+#contact_me{
+    height: 30vh;
+    width: 100vw;
+    background-color:white;
+}
+#contact_me .content{
+    display: flex;
+    height:auto;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#contact_me h2{
+    padding: 1.5rem 0px;
+    text-shadow: 1px 1px rgba(100,100,100,0.5);
+    margin: 0px;
+    color: #dba0c2;
+    font-size: 3rem;
+
+}
+.contact_info{
+    height: 100px;
+    min-width: 0;
+    color: #dba0c2;
+    font-size: 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}.linkedin{
+    color: #dba0c2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile friendly home page iPhone 12Pro */
+
+@media screen and (min-width: 390px) and (max-width:450px){
+    /* Section: Header */
+    .welcome{
+        padding: 0px 20px;
+
+    }
+    .navbar{
+        font-size: 14px;
+        height: 10px;
+        width: 100vw;
+        padding: 0px;
+    }
+    .kathdypril{
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    .hamburger{
+        display: block;
+        padding-right: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg); /* This makes the first line and third line turn into an x. The middle line disappears. */
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav_menu{
+        position: fixed; /* when we scroll down, the hamburger menu will stay on the screen. */
+        left: -150%; /* Method to hide something from sight */
+        top: 75px;
+        gap:0;
+        justify-content: center;
+        flex-direction: column; /* The menu links will appear in a column */
+        background-color: #EAB8FF;
+        opacity: 85%;
+        width: 390px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        padding-left: 0px; /* When the hamburger is clicked, the menu will appear in 0.3s */
+    }
+    .nav_item{
+    margin: 10px 0px;
+    }
+    .nav_menu.active{
+    left: 0;
+    }
+
+    /* Section: intro */
+    #intro{ /* Welcome to my portfolio */
+     width: 100vw;
+    }
+    #intro .line1{
+        font-size: 2rem;
+        width: auto;
+    } /* Here resides my digital life */
+    #intro .line2{
+        font-size: 20px;
+        width: auto;
+    }
+    #intro .line3{
+        font-size: 20px;
+        width: auto;
+    }
+    #intro .line4{
+        font-size: 20px;
+        width: auto;
+    }
+
+
+/* Section: Projects */
+
+
+#projects{
+    height: 100vh;
+    width: 100%;
+
+}
+.left_side p{
+    font-size: 1rem;
+    width: auto;
+}
+.leftside_image img{
+    width: auto;
+    height: 200px;
+}
+.rightside_description{
+    width: 50%;
+    min-height: 300px;
+    background-color: white;
+    border-radius:8px;
+    color: #f5a6a2;
+}
+.rightside_description h1{
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+
+
+/* Section: About Me */
+#about_me{
+    height: 100vh;
+    width: 100vw;
+}
+
+.left_side h1{
+    text-shadow: 1px 1px rgba(100,100,100,0.5);
+    padding: 60px 0px;
+    margin: 0;
+    font-size: 2rem;
+    color: #B24781;
+}
+.left_side p{
+    line-height: 1.3rem;
+}
+.about_me_container{
+    padding: 2rem 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_me_container h1{
+    padding: 1rem 0;
+}
+.right_side_image{
+    padding-top: 1em;
+    height:auto;
+    width: 50vw;
+
+}
+
+
+/* Section: contact */
+
+
+#contact_me{
+    height: 100vh;
+    width: 100vw;
+    background-color: #EAB8FF;
+}
+#contact_me .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+#contact_me h2{
+margin: 0px;
+
+}
+#contact_me p{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        ::before,
+        ::after {
+          animation-delay: -1ms !important;
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+          background-attachment: initial !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0s !important;
+          transition-delay: 0s !important;
+        }
+     
+      }
+
